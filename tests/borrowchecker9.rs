@@ -3,6 +3,8 @@ fn mutate(x: &mut i32) {
     *x += 1;
 }
 
-let mut x = 5;        // Mutable variable
-mutate(&mut x);       // Mutable borrow
-let y = &mut x;       
+fn main() {
+    let mut x = 5; // Mutable variable
+    mutate(&mut x); // Mutable borrow
+    let y = &mut x;
+}
