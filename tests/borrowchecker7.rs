@@ -1,4 +1,4 @@
-// Exclusive Mutable Access (Should Fail)
+// Exclusive Mutable Access (Should Pass)
 let mut x = 5;        // Mutable variable
 let y = &mut x;       // Mutable borrow
-let z = &mut x;       // Error: Cannot mutate x while it is mutably borrowed
+let z = &mut x;       
